@@ -1,0 +1,63 @@
+.slide-container {
+  :global {
+    .swiper-slide {
+      height: 334px;
+    }
+
+    .swiper-wrapper {
+      padding-bottom: 130px;
+    }
+
+    .swiper-pagination-bullet {
+      transition: all 200ms ease-in-out;
+      opacity: 1;
+      border-radius: 0%;
+
+      &.swiper-pagination-bullet-active {
+        width: 16px;
+        background-color: #e6553b;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .slide-container {
+    :global {
+      .swiper-wrapper {
+        align-items: center;
+        padding-bottom: 48px;
+        max-height: 439px;
+      }
+
+      .swiper-slide {
+        height: 262px;
+        width: 25% !important;
+
+        img {
+          height: 100%;
+
+          transition: all 300ms linear;
+          filter: grayscale(1);
+        }
+
+        .artist-description {
+          display: none;
+        }
+
+        &.swiper-slide-active {
+          height: 439px;
+          width: 50% !important;
+
+          img {
+            filter: grayscale(0);
+          }
+
+          .artist-description {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
