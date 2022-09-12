@@ -74,10 +74,12 @@ const artworkContent = [
   },
 ];
 
-const Artwork = () => {
+const Artwork = ({ noSectionHeader = false }) => {
   return (
     <section className="container">
-      <SectionHeader mainTitle="Artwork" subTitle="最新藝術品" />
+      {!noSectionHeader && (
+        <SectionHeader mainTitle="Artwork" subTitle="最新藝術品" />
+      )}
       <div className=" columns-2 gap-x-4 pt-6 pb-12 md:columns-3  md:gap-x-6 md:pb-20 md:pt-12 lg:columns-4">
         {artworkContent.map((artwork, i) => (
           // eslint-disable-next-line react/no-unknown-property

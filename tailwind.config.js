@@ -40,6 +40,7 @@ module.exports = {
       },
       borderWidth: {
         16: '16px',
+        24: '24px',
       },
       fontSize: {
         0: 0,

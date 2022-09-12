@@ -36,8 +36,8 @@ const JoinUs = () => {
         <h4 className="mb-4 text-center text-3.5xl md:text-5xl">Join Us</h4>
         <p className="text-center text-xl font-bold">創建並出售你的藝術品</p>
       </div>
-      <div className="border-y-4 border-black py-2">
-        <div className="border-y border-black">
+      <div className="border-t-4 border-black pt-1">
+        <div className="border-t border-black">
           <div className="grid-col-1 container grid gap-y-12 gap-x-6 py-12 font-noto-sans-tc sm:grid-cols-2 md:py-20 lg:grid-cols-4">
             {joinUsContent.map((point) => (
               // eslint-disable-next-line react/no-unknown-property

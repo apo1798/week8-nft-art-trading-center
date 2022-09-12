@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import {
@@ -11,6 +11,7 @@ import {
 const MobileNavbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const searchRef = useRef(null);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -24,6 +25,8 @@ const MobileNavbar = () => {
           className="text-lg hover:cursor-pointer hover:text-primary"
           onClick={() => {
             setSearchOpen(true);
+            // Not working lol
+            searchRef.current.focus();
           }}
         />
         {menuOpen ? (
@@ -43,29 +46,34 @@ const MobileNavbar = () => {
             }}
           />
         )}
-        {searchOpen && (
-          <div className="container absolute inset-0 flex items-center gap-4 bg-gray-light">
-            <div className="flex grow items-center gap-4">
-              <FontAwesomeIcon
-                icon={faAngleLeft}
-                className="text-lg hover:cursor-pointer hover:text-primary"
-                onClick={() => {
-                  setSearchOpen(false);
-                }}
-              />
-              <input
-                type="text"
-                className="w-72 grow bg-transparent px-2 py-1 text-sm focus-visible:outline-primary"
-                placeholder="搜尋作品名稱、藝術家名稱"
-                id="search"
-              />
-            </div>
+        {/* {searchOpen && ( */}
+        <div
+          className={`container absolute inset-0 flex items-center gap-4 bg-gray-light ${
+            searchOpen ? 'block' : 'hidden'
+          }`}
+        >
+          <div className="flex grow items-center gap-4">
             <FontAwesomeIcon
-              icon={faSearch}
+              icon={faAngleLeft}
               className="text-lg hover:cursor-pointer hover:text-primary"
+              onClick={() => {
+                setSearchOpen(false);
+              }}
+            />
+            <input
+              type="text"
+              className="w-72 grow bg-transparent px-2 py-1 text-sm focus-visible:outline-primary"
+              placeholder="搜尋作品名稱、藝術家名稱"
+              id="search"
+              ref={searchRef}
             />
           </div>
-        )}
+          <FontAwesomeIcon
+            icon={faSearch}
+            className="text-lg hover:cursor-pointer hover:text-primary"
+          />
+        </div>
+        {/* )} */}
         {menuOpen && (
           <>
             <div

@@ -41,7 +41,7 @@ const RankingCard = ({ image, title, author, price, number }) => {
 
   return (
     <li className="group relative flex w-full cursor-pointer bg-white outline outline-1 outline-black md:block md:cursor-default">
-      <div className="top-0 left-0 z-[2] flex basis-14 items-center justify-center bg-white p-2 px-4 py-6 font-paytone text-3.5xl outline outline-1            outline-black md:absolute md:h-12 md:w-12 md:basis-auto">
+      <div className="top-0 left-0 z-[2] flex basis-14 items-center justify-center bg-white p-2 px-4 py-6 font-paytone text-3.5xl outline outline-1 outline-black md:absolute md:h-12 md:w-12 md:basis-auto">
         {number}
       </div>
       <div className="relative w-[87px] overflow-hidden bg-cover text-0 outline outline-1 outline-black  md:h-[374px] md:w-auto">
@@ -54,7 +54,11 @@ const RankingCard = ({ image, title, author, price, number }) => {
           alt={title}
           className="object-cover object-top"
         />
-        <div className="absolute right-0 bottom-0 z-[20] mb-[-1px] mr-[-1px] hidden bg-white group-hover:md:block">
+        <div
+          className="absolute 
+        right-0 bottom-0 z-[20] mb-[-1px] mr-[-1px] hidden bg-white group-hover:md:block
+        "
+        >
           <Button />
         </div>
       </div>
