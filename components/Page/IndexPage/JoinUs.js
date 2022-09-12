@@ -41,7 +41,7 @@ const JoinUs = () => {
           <div className="grid-col-1 container grid gap-y-12 gap-x-6 py-12 font-noto-sans-tc sm:grid-cols-2 md:py-20 lg:grid-cols-4">
             {joinUsContent.map((point) => (
               // eslint-disable-next-line react/no-unknown-property
-              <div key={point.title} className="text-center">
+              <div data-aos="fade-up" key={point.title} className="text-center">
                 <FontAwesomeIcon
                   icon={point.icon}
                   className="mb-4 text-[40px] text-primary"

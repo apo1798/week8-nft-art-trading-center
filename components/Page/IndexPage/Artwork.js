@@ -74,6 +74,18 @@ const artworkContent = [
   },
 ];
 
+const AosAnimation = [
+  'fade',
+  'fade-up',
+  'fade-down',
+  'fade-left',
+  'fade-right',
+  'fade-up-right',
+  'fade-up-left',
+  'fade-down-right',
+  'fade-down-left',
+];
+
 const Artwork = ({ noSectionHeader = false }) => {
   return (
     <section className="container">
@@ -84,6 +96,8 @@ const Artwork = ({ noSectionHeader = false }) => {
         {artworkContent.map((artwork, i) => (
           // eslint-disable-next-line react/no-unknown-property
           <div
+            data-aos={AosAnimation[i]}
+            data-aos-duration="2500"
             key={artwork.title}
             className={`cursor-pointer break-inside-avoid md:mb-12 md:cursor-default ${
               i + 1 >= 6 ? 'hidden sm:block' : ''

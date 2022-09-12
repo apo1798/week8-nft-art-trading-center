@@ -48,7 +48,7 @@ const Artist = () => {
   return (
     <section className="container">
       <SectionHeader mainTitle="Artist" subTitle="熱門藝術家" />
-      <div className="pt-6 pb-10 md:pb-20 md:pt-12">
+      <div data-aos="fade-down" className="pt-6 pb-10 md:pb-20 md:pt-12">
         <Swiper
           slidesPerView={1}
           spaceBetween={24}
@@ -92,19 +92,6 @@ const Artist = () => {
               </p>
             </SwiperSlide>
           ))}
-
-          {/* <SwiperSlide className="w-[306px]">
-            <Image src={Artist02} alt={'Bob'} />
-          </SwiperSlide>
-          <SwiperSlide className="w-[306px]">
-            <Image src={Artist03} alt={'Bob'} />
-          </SwiperSlide>
-          <SwiperSlide className="w-[306px]">
-            <Image src={Artist03} alt={'Bob'} />
-          </SwiperSlide>
-          <SwiperSlide className="w-[306px]">
-            <Image src={Artist02} alt={'Bob'} />
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </section>

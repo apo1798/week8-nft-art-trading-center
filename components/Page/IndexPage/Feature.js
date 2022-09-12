@@ -9,7 +9,10 @@ import Image03 from 'public/images/art21.jpg';
 const Feature = () => {
   return (
     <section className="mx-auto pt-0 pb-20 md:container md:pt-10">
-      <div className="flex flex-col bg-white outline outline-1 outline-black lg:flex-row">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col bg-white outline outline-1 outline-black lg:flex-row"
+      >
         <h1 className="hidden items-center bg-black p-6 text-xl text-white [writing-mode:vertical-lr] lg:flex">
           <span className="pb-4 text-5xl">Recommend</span>
           推薦系列
@@ -38,7 +41,7 @@ const Feature = () => {
         </div>
       </div>
 
-      <div className="bg-white md:flex">
+      <div className="bg-white md:flex" data-aos="fade-up">
         <div className="mt-[1px] flex w-full grow flex-col outline outline-1 outline-black sm:flex-row-reverse md:w-1/2">
           <div className="relative min-h-[372px] shrink-0 grow text-0 md:min-h-[340px] lg:basis-[329px]">
             <Image
@@ -60,7 +63,10 @@ const Feature = () => {
           </div>
         </div>
 
-        <div className="mt-[1px] flex w-full grow flex-col outline outline-1 outline-black sm:flex-row md:w-1/2 md:flex-row-reverse">
+        <div
+          data-aos="fade-up"
+          className="mt-[1px] flex w-full grow flex-col outline outline-1 outline-black sm:flex-row md:w-1/2 md:flex-row-reverse"
+        >
           <div className="relative min-h-[372px] shrink-0 grow text-0 md:min-h-[340px] lg:basis-[329px]">
             <Image
               src={Image03}

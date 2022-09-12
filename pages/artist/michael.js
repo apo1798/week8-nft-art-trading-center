@@ -63,6 +63,18 @@ const artWorksContent = [
   },
 ];
 
+const AosAnimation = [
+  'fade',
+  'fade-up',
+  'fade-down',
+  'fade-left',
+  'fade-right',
+  'fade-up-right',
+  'fade-up-left',
+  'fade-down-right',
+  'fade-down-left',
+];
+
 const michael = () => {
   const [section, setSection] = useState('artWorks');
 
@@ -73,7 +85,10 @@ const michael = () => {
       </Head>
       <section>
         <div className="container mb-10 mt-6 flex flex-col gap-6 md:mt-10 md:mb-20 md:flex-row">
-          <div className="border border-black bg-white md:flex md:basis-[996px]">
+          <div
+            data-aos="fade-up"
+            className="border border-black bg-white md:flex md:basis-[996px]"
+          >
             <div className="relative h-[213px] md:h-full md:w-5/12">
               <Image
                 src={content.image}
@@ -135,7 +150,10 @@ const michael = () => {
               <p className="font-noto-sans-tc">{content?.description}</p>
             </div>
           </div>
-          <ul className="border border-black bg-white font-noto-sans-tc md:basis-[306px]">
+          <ul
+            data-aos="fade-down"
+            className="border border-black bg-white font-noto-sans-tc md:basis-[306px]"
+          >
             <li className="flex items-center justify-between border-b border-black px-6 py-4 font-bold">
               販售中
               <span className="font-squada text-3.5xl leading-[34px]">
@@ -226,14 +244,20 @@ const michael = () => {
                   <div className="absolute top-0 right-0 border-t-24 border-l-24 border-t-black border-l-transparent"></div>
                 </div>
                 <div className="px-4 pt-8 md:px-10 md:pt-12 lg:px-[110px]">
-                  <h3 className="mb-4 text-2xl font-bold">{work.title}</h3>
-                  <div className="mb-6 flex items-end justify-between gap-[88px] md:mb-12">
+                  <h3 data-aos="fade-up" className="mb-4 text-2xl font-bold">
+                    {work.title}
+                  </h3>
+                  <div
+                    data-aos="fade-up"
+                    className="mb-6 flex items-end justify-between gap-[88px] md:mb-12"
+                  >
                     <p>{work.description}</p>
                     <Button className="hidden md:block" />
                   </div>
                   <div className="mb-4 flex gap-2 md:mb-0">
                     {work.images.map((image, i) => (
                       <div
+                        data-aos={AosAnimation[i]}
                         key={i}
                         className={` h-[313px] grow bg-black p-2 md:h-[270px] ${
                           i !== 0 ? 'hidden md:block' : ''

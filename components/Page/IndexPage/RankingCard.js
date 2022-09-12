@@ -9,7 +9,10 @@ const RankingCard = ({ image, title, author, price, number }) => {
   // small card with no dektop version
   if (number >= 4)
     return (
-      <li className="group relative flex w-full bg-white outline outline-1 outline-black hover:cursor-pointer ">
+      <li
+        data-aos="fade-up"
+        className="group relative flex w-full bg-white outline outline-1 outline-black hover:cursor-pointer"
+      >
         <div className="top-0 left-0 z-[2] flex basis-14 items-center justify-center bg-white p-2 px-4 py-6 font-paytone text-3.5xl outline outline-1 outline-black">
           {number}
         </div>
@@ -40,7 +43,10 @@ const RankingCard = ({ image, title, author, price, number }) => {
     );
 
   return (
-    <li className="group relative flex w-full cursor-pointer bg-white outline outline-1 outline-black md:block md:cursor-default">
+    <li
+      data-aos="fade-up"
+      className="group relative flex w-full cursor-pointer bg-white outline outline-1 outline-black md:block md:cursor-default"
+    >
       <div className="top-0 left-0 z-[2] flex basis-14 items-center justify-center bg-white p-2 px-4 py-6 font-paytone text-3.5xl outline outline-1 outline-black md:absolute md:h-12 md:w-12 md:basis-auto">
         {number}
       </div>
