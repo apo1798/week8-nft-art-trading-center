@@ -42,7 +42,7 @@ const Feature = () => {
       </div>
 
       <div className="bg-white md:flex" data-aos="fade-up">
-        <div className="mt-[1px] flex w-full grow flex-col outline outline-1 outline-black sm:flex-row-reverse md:w-1/2">
+        <div className="mt-[1px] mr-[1px] flex w-full grow flex-col outline outline-1 outline-black sm:flex-row-reverse md:w-1/2">
           <div className="relative min-h-[372px] shrink-0 grow text-0 md:min-h-[340px] lg:basis-[329px]">
             <Image
               src="/images/art02.jpg"
