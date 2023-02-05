@@ -21,6 +21,21 @@ export default function index() {
         <Artist />
         <Artwork />
         <JoinUs />
+        <p className='' suppressHydrationWarning>{new Date().toLocaleDateString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T00:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T01:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T02:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T03:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T04:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T05:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T06:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T07:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T08:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T09:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T10:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T11:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning>{new Date("2022-01-12T12:00:00.000Z").toLocaleString()}</p>
+
       </main>
     </>
   );
