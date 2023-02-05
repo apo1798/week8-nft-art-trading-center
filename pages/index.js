@@ -34,7 +34,7 @@ export default function index() {
         <p className='' suppressHydrationWarning>{new Date("2022-01-12T09:00:00.000Z").toLocaleString()}</p>
         <p className='' suppressHydrationWarning>{new Date("2022-01-12T10:00:00.000Z").toLocaleString()}</p>
         <p className='' suppressHydrationWarning>{new Date("2022-01-12T11:00:00.000Z").toLocaleString()}</p>
-        <p className='' suppressHydrationWarning>{new Date("2022-01-12T12:00:00.000Z").toLocaleString()}</p>
+        <p className='' suppressHydrationWarning >{new Date("2022-01-12T12:00:00.000Z").toLocaleString()}</p>
 
       </main>
     </>
