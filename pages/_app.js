@@ -8,6 +8,8 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Layout from 'components/Layout/Layout';
 
+import Script from 'next/script';
+
 // importing aos
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -25,6 +27,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Script
+        data-domain="plausible-demo-test.vercel.app"
+        src="http://stage.42.pansci.asia/js/script.js"
+      />
       <Layout>
         <Component {...pageProps} />
       </Layout>
