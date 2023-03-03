@@ -37,7 +37,7 @@ const Header = () => {
         <header className="relative border-b border-black bg-gray-light">
           <div className="container flex items-center justify-between lg:items-stretch">
             <div className="relative flex h-[18px] w-[85px] shrink-0 items-center lg:h-auto lg:w-auto">
-              <Link href="/">
+              <Link href="/artist/michael">
                 <a href="" className="text-0">
                   <Image
                     src={Logo}

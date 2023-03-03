@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-const Button = ({ text = 'more', className = '', href = '/' }) => {
+const Button = ({
+  text = 'more',
+  className = '',
+  href = '/artist/michael',
+}) => {
   return (
     <Link href={href}>
       <a

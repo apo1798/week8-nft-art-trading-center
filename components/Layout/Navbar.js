@@ -24,17 +24,17 @@ const Navbar = () => {
           </div>
         </li>
         <li className="flex items-center border-l border-black px-12 py-10">
-          <Link href="/">
+           <Link href="/artist/michael">
             <a className="font-bold hover:text-primary">探索</a>
           </Link>
         </li>
         <li className="flex items-center border-l border-black px-12 py-10">
-          <Link href="/">
+           <Link href="/artist/michael">
             <a className="font-bold hover:text-primary">市值</a>
           </Link>
         </li>
         <li className="flex items-center border-l border-black px-12 py-10">
-          <Link href="/">
+           <Link href="/artist/michael">
             <a href="">
               <FontAwesomeIcon
                 icon={faWallet}

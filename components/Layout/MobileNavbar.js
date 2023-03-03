@@ -86,7 +86,7 @@ const MobileNavbar = () => {
             <nav className="absolute top-full left-0 z-20 w-full border-t border-black bg-white">
               <ul className="px-3 pb-3 text-center">
                 <li>
-                  <Link href="/">
+                   <Link href="/artist/michael">
                     <a className="my-3 block py-3 text-lg font-bold hover:text-primary">
                       探索
                     </a>
@@ -94,7 +94,7 @@ const MobileNavbar = () => {
                 </li>
                 <div className="h-[1px] bg-black"></div>
                 <li>
-                  <Link href="/">
+                   <Link href="/artist/michael">
                     <a className="my-3 block py-3 text-lg font-bold hover:text-primary">
                       市值
                     </a>
@@ -102,7 +102,7 @@ const MobileNavbar = () => {
                 </li>
                 <li>
                   <button type="button" className="mb-3 block w-full">
-                    <Link href="/">
+                     <Link href="/artist/michael">
                       <a className="block border border-black bg-primary py-3 text-lg text-white hover:bg-orange-500">
                         連結錢包
                       </a>
