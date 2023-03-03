@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         data-domain="plausible-demo-test.vercel.app"
-        src="http://stage.42.pansci.asia/js/script.js"
+        src="https://stage.42.pansci.asia/js/script.js"
       />
       <Layout>
         <Component {...pageProps} />
